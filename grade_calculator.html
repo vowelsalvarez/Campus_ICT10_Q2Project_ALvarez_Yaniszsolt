@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GWA Calculator - MedUnity University</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="grade_calculator.html" class="active">Grade Calculator</a>
+        <a href="clubs.html">Clubs</a>
+    </div>
+
+    <div class="container">
+        <h2>Student GWA Calculator</h2>
+
+        <label for="firstName">First Name:</label>
+        <input id="firstName" type="text" placeholder="Enter First Name">
+
+        <label for="lastName">Last Name:</label>
+        <input id="lastName" type="text" placeholder="Enter Last Name">
+
+        <h4>Enter Your Grades:</h4>
+
+        <label for="science">Science</label>
+        <input id="science" type="number" placeholder="Enter Science grade">
+
+        <label for="math">Math</label>
+        <input id="math" type="number" placeholder="Enter Math grade">
+
+        <label for="english">English</label>
+        <input id="english" type="number" placeholder="Enter English grade">
+
+        <label for="filipino">Filipino</label>
+        <input id="filipino" type="number" placeholder="Enter Filipino grade">
+
+        <label for="ict">ICT</label>
+        <input id="ict" type="number" placeholder="Enter ICT grade">
+
+        <label for="pe">PE</label>
+        <input id="pe" type="number" placeholder="Enter PE grade">
+
+        <button py-click="calculate_gwa">Calculate GWA</button>
+
+        <div id="result"></div>
+        <div id="gwa" class="gwa-box"></div>
+    </div>
+
+    <script type="py" src="main.py"></script>
+</body>
+</html>
